@@ -55,7 +55,7 @@
   document.getElementById('skinTopCenter').style.display = gameActive ? 'flex' : 'none';
 
   // Fondo dinámico
-  document.body.style.background = gameActive ? '#B3E5FC' : 'rgba(255,255,255,0.5)';
+  document.body.style.background = gameActive ? '#B3E5FC' : 'rgba(147, 147, 147, 0.5)';
 
   // Reiniciar juego visualmente
   resetGame();
