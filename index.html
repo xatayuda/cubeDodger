@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Game Dodger</title>
+</head>
+<body>
+    
+ <!-- Botón activar/desactivar -->
+<button id="toggleGame" class="top-left">🎮 Activar Juego</button>
+
+<!-- Selector de skins superior -->
+<div id="skinTopCenter">
+  <button id="skinToggleBtn">🎨 Skins</button>
+  <div id="skinOptionsTop">
+    <div class="skin-color" data-skin="skinYellow" style="background:#ffeb3b;"></div>
+    <div class="skin-color" data-skin="skinBlue" style="background:#2196f3;"></div>
+    <div class="skin-color" data-skin="skinGreen" style="background:#4caf50;"></div>
+    <div class="skin-color" data-skin="skinPurple" style="background:#9c27b0;"></div>
+    <div class="skin-color" data-skin="skinPink" style="background:#E977FF;"></div>
+  </div>
+</div>
+
+  <!-- Controles -->
+  <div class="top-right" id="controls" style="display:none;">
+    <button id="startBtn">▶️ Empezar</button>
+    <button id="stopBtn">⏹️ Detener</button>
+    <button id="leftBtn">⬅️</button>
+    <button id="rightBtn">➡️</button>
+    <button id="restartBtn">🔁 Reiniciar</button>
+  </div>
+
+  <!-- Panel de estadísticas (izquierda) -->
+  <div id="statsPanel" class="hidden">
+    <h2>🎮 Estadísticas</h2>
+    <div class="stat-item">
+      <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <strong>Vidas:</strong> <span id="livesDisplay">3</span>
+    </div>
+    <div class="stat-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+      <strong>Nivel:</strong> <span id="levelDisplay">1</span>
+    </div>
+    <div class="stat-item" style="flex-direction: column; align-items: flex-start;">
+      <strong>Puntos:</strong> <span id="pointsDisplay">0</span>
+      <div class="progress-bar-bg" aria-label="Progreso al siguiente nivel" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div id="progressBar" class="progress-bar-fill"></div>
+      </div>
+    </div>
+
+    <!-- Skin actual -->
+<div id="currentSkinDisplay" style="margin-top:15px; text-align:center;">
+  <strong>Skin:</strong>
+  <div id="currentSkinBox" style="width:30px; height:30px; margin:5px auto; border-radius:6px; border:2px solid #4caf50;"></div>
+
+  <!-- Efecto visual animado -->
+  <div class="pulse-circle"></div>
+</div>
+
+  </div>
+
+  <!-- Contenedor del juego (derecha) -->
+  <div id="gameContainer" class="hidden">
+    <div id="game">
+      <div id="player"></div>
+      <div id="score">0</div>
+      <div id="gameOverMsg">GAME OVER</div>
+    </div>
+  </div>
+
+</body>
+</html>
