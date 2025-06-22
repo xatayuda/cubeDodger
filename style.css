@@ -181,7 +181,7 @@
 
     /* Skins selector */
     #skinSelector {
-      margin-top: 10px;
+      margin-top: 5px;
       text-align: center;
     }
     #skinSelector button {
@@ -209,7 +209,7 @@
 #skinTopCenter {
   display: none;
   position: absolute;
-  top: 5px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
