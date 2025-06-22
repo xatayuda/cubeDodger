@@ -185,7 +185,8 @@
       text-align: center;
     }
     #skinSelector button {
-      margin: 5px 3px;
+      margin-top: 35px;
+      /*margin: 5px 3px;*/
       width: 36px;
       height: 26px;
       border-radius: 6px;
