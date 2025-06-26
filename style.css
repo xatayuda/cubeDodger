@@ -215,7 +215,7 @@
   transform: translateX(-50%);
   z-index: 100;
   align-items: center;
-  /*gap: 8px;*/
+  gap: 8px;
 }
 
 #skinToggleBtn {
@@ -233,7 +233,7 @@
   left: calc(50% + 100px); /* desplaza hacia la derecha del botón */
   transform: translateX(-50%);
   display: none;
-  top: 15px;
+  margin-top: 0.5rem;
   flex-direction: row;
   gap: 8px;
   z-index: 99;
