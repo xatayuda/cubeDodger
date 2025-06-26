@@ -233,7 +233,7 @@
   left: calc(50% + 100px); /* desplaza hacia la derecha del botón */
   transform: translateX(-50%);
   display: none;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-left: 3rem;
   flex-direction: row;
   gap: 8px;
