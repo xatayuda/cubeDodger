@@ -208,14 +208,14 @@
 
 /* Skins top center */
 #skinTopCenter {
-  display: none;
+  /*display: none;*/
   position: absolute;
-  top: 35px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  align-items: center;
-  gap: 8px;
+  /*align-items: center;
+  gap: 8px;*/
 }
 
 #skinToggleBtn {
@@ -229,9 +229,18 @@
 }
 
 #skinOptionsTop {
+  position: absolute;
+  left: calc(50% + 100px); /* desplaza hacia la derecha del botón */
+  transform: translateX(-50%);
   display: none;
-  top: 35px;
+  top: 15px;
+  flex-direction: row;
   gap: 8px;
+  z-index: 99;
+  padding: 6px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
 }
 
 .skin-color {
